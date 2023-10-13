@@ -21,14 +21,10 @@ public class Test {
     private final Parser parser;
 
     @GetMapping("/test")
-    public ResponseEntity<?> test(@RequestBody Coordinates coordinates){
-        System.out.println(coordinates);
+    public ResponseEntity<?> test(){
 
         return ResponseEntity.ok(parser.request(
-                coordinates.getLat1(),
-                coordinates.getLgn1(),
-                coordinates.getLat2(),
-                coordinates.getLgn2()
+                55.76, 37.44, 51.76, 39.43
         ));
     }
 
