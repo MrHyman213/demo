@@ -19,7 +19,7 @@ public class CommonRateController {
 
     @GetMapping("/optimal")
     public ResponseEntity<?> setPoints(@RequestBody Coordinates coordinates) throws JsonProcessingException {
-        return ResponseEntity.ok(rateService.getTimes());
+        return ResponseEntity.ok(rateService.getRatesByRoads(coordinates));
     }
 
 }

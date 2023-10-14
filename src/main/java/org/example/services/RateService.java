@@ -48,10 +48,6 @@ public class RateService {
         this.rates = rates;
     }
 
-    public Map<Integer, Integer> getTimes(){
-        return times;
-    }
-
     public Map<Integer, Double> getBestRate(){
         return rates;
     }
