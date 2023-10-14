@@ -1,7 +1,8 @@
-package org.example.dto;
+package org.example.dto.Parser;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.example.dto.Parser.Elements;
 
 import java.util.List;
 

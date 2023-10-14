@@ -1,7 +1,9 @@
-package org.example.dto;
+package org.example.dto.Parser;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.example.dto.Parser.Distance;
+import org.example.dto.Parser.Duration;
 
 @Data
 @AllArgsConstructor
