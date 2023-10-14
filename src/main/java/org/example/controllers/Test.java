@@ -21,11 +21,12 @@ public class Test {
     private final Parser parser;
 
     @GetMapping("/test")
-    public ResponseEntity<?> test(){
-
-        return ResponseEntity.ok(parser.request(
+    public ResponseEntity<?> test(@RequestBody Coordinates coordinates){
+        Container container = parser.request(
                 55.76, 37.44, 51.76, 39.43
-        ));
+        );
+        System.out.println(container.getOriginAddresses());
+        return ResponseEntity.ok("OK");
     }
 
 }

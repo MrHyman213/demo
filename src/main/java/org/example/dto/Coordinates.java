@@ -7,14 +7,15 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
 @AllArgsConstructor
+@Data
 public class Coordinates {
     private double lat1, lat2, lgn1, lgn2;
+    //private List<LatLng> latLngs;
 
-    public Coordinates(){
-
+    public Coordinates() {
+//        if(latLngs == null)
+//            this.latLngs = new ArrayList<>();
     }
-
 
 }
